@@ -29,16 +29,16 @@ def draw_koch_snowflake(order, size=420):
 def task2():
     while True:
         try:
-            input_arg = int(input('Enter the level of recursion: (close to -1))'))
+            input_arg = int(input('Enter the level of recursion: (close to -1)):   ' ))
         except ValueError:
-            print('Incorrect level of recursion. Please use numbers only')
+            print('Incorrect level of recursion. Please use positive numbers only')
             continue
         if input_arg ==-1:
             print('Good bye!')
             break
     
         if input_arg < 0:
-            print('Incorrect level of recursion. Please use numbers only')
+            print('Incorrect level of recursion. Please use positive numbers of -1 for exit')
             continue
         
         draw_koch_snowflake(int(input_arg))
