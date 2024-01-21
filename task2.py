@@ -38,7 +38,7 @@ def task2():
             break
     
         if input_arg < 0:
-            print('Incorrect level of recursion. Please use positive numbers of -1 for exit')
+            print('Incorrect level of recursion. Please use positive numbers or -1 for exit')
             continue
         
         draw_koch_snowflake(int(input_arg))
